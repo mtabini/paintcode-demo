@@ -13,6 +13,11 @@
 		8F945AC31716F9FA00F0E258 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8F945AC11716F9FA00F0E258 /* Credits.rtf */; };
 		8F945AC61716F9FA00F0E258 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F945AC51716F9FA00F0E258 /* AppDelegate.m */; };
 		8F945AC91716F9FB00F0E258 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F945AC71716F9FB00F0E258 /* MainMenu.xib */; };
+		8F945AD01716FA1600F0E258 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F945ACF1716FA1600F0E258 /* QuartzCore.framework */; };
+		8F945AD51716FA3A00F0E258 /* MorphLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F945AD41716FA3A00F0E258 /* MorphLayer.m */; };
+		8F945AD81716FA4D00F0E258 /* MorphLayer+Paths.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F945AD71716FA4D00F0E258 /* MorphLayer+Paths.m */; };
+		8F945ADC1716FBBE00F0E258 /* NSBezierPath+CGPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F945ADB1716FBBE00F0E258 /* NSBezierPath+CGPath.m */; };
+		8F945AE31716FF0E00F0E258 /* MorphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F945AE21716FF0E00F0E258 /* MorphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,15 @@
 		8F945AC41716F9FA00F0E258 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F945AC51716F9FA00F0E258 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8F945AC81716F9FB00F0E258 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8F945ACF1716FA1600F0E258 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8F945AD31716FA3A00F0E258 /* MorphLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorphLayer.h; sourceTree = "<group>"; };
+		8F945AD41716FA3A00F0E258 /* MorphLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MorphLayer.m; sourceTree = "<group>"; };
+		8F945AD61716FA4D00F0E258 /* MorphLayer+Paths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MorphLayer+Paths.h"; sourceTree = "<group>"; };
+		8F945AD71716FA4D00F0E258 /* MorphLayer+Paths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MorphLayer+Paths.m"; sourceTree = "<group>"; };
+		8F945ADA1716FBBE00F0E258 /* NSBezierPath+CGPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+CGPath.h"; sourceTree = "<group>"; };
+		8F945ADB1716FBBE00F0E258 /* NSBezierPath+CGPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+CGPath.m"; sourceTree = "<group>"; };
+		8F945AE11716FF0E00F0E258 /* MorphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorphView.h; sourceTree = "<group>"; };
+		8F945AE21716FF0E00F0E258 /* MorphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MorphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F945AD01716FA1600F0E258 /* QuartzCore.framework in Frameworks */,
 				8F945AB31716F9FA00F0E258 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,6 +78,7 @@
 		8F945AB11716F9FA00F0E258 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F945ACF1716FA1600F0E258 /* QuartzCore.framework */,
 				8F945AB21716F9FA00F0E258 /* Cocoa.framework */,
 				8F945AB41716F9FA00F0E258 /* Other Frameworks */,
 			);
@@ -82,9 +98,9 @@
 		8F945AB81716F9FA00F0E258 /* Morph */ = {
 			isa = PBXGroup;
 			children = (
-				8F945AC41716F9FA00F0E258 /* AppDelegate.h */,
-				8F945AC51716F9FA00F0E258 /* AppDelegate.m */,
-				8F945AC71716F9FB00F0E258 /* MainMenu.xib */,
+				8F945AE01716FF0200F0E258 /* MorphView */,
+				8F945AD91716FBAA00F0E258 /* Utilities */,
+				8F945AD11716FA1E00F0E258 /* App Delegate */,
 				8F945AB91716F9FA00F0E258 /* Supporting Files */,
 			);
 			path = Morph;
@@ -100,6 +116,46 @@
 				8F945AC11716F9FA00F0E258 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F945AD11716FA1E00F0E258 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8F945AC41716F9FA00F0E258 /* AppDelegate.h */,
+				8F945AC51716F9FA00F0E258 /* AppDelegate.m */,
+				8F945AC71716F9FB00F0E258 /* MainMenu.xib */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		8F945AD21716FA2700F0E258 /* Morph Layer */ = {
+			isa = PBXGroup;
+			children = (
+				8F945AD31716FA3A00F0E258 /* MorphLayer.h */,
+				8F945AD41716FA3A00F0E258 /* MorphLayer.m */,
+				8F945AD61716FA4D00F0E258 /* MorphLayer+Paths.h */,
+				8F945AD71716FA4D00F0E258 /* MorphLayer+Paths.m */,
+			);
+			name = "Morph Layer";
+			sourceTree = "<group>";
+		};
+		8F945AD91716FBAA00F0E258 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8F945ADA1716FBBE00F0E258 /* NSBezierPath+CGPath.h */,
+				8F945ADB1716FBBE00F0E258 /* NSBezierPath+CGPath.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		8F945AE01716FF0200F0E258 /* MorphView */ = {
+			isa = PBXGroup;
+			children = (
+				8F945AD21716FA2700F0E258 /* Morph Layer */,
+				8F945AE11716FF0E00F0E258 /* MorphView.h */,
+				8F945AE21716FF0E00F0E258 /* MorphView.m */,
+			);
+			name = MorphView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +224,10 @@
 			files = (
 				8F945ABF1716F9FA00F0E258 /* main.m in Sources */,
 				8F945AC61716F9FA00F0E258 /* AppDelegate.m in Sources */,
+				8F945AD51716FA3A00F0E258 /* MorphLayer.m in Sources */,
+				8F945AD81716FA4D00F0E258 /* MorphLayer+Paths.m in Sources */,
+				8F945ADC1716FBBE00F0E258 /* NSBezierPath+CGPath.m in Sources */,
+				8F945AE31716FF0E00F0E258 /* MorphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
